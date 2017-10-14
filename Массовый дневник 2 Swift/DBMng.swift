@@ -10,16 +10,12 @@ import Foundation
 import UIKit
 import CoreData
 
-class DBCreator {
-    let context: NSManagedObjectContext
+class DBMng {
     let entity = "Weight"
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
     
-    init() {
-        context = appDelegate.managedObjectContext
-    }
-    
-    func save(kg: Float!, date: Date) {
+    func save(weightEntity: WeightEntity) {
         let managedContext = appDelegate.persistentContainer.viewContext
         
         let entity = NSEntityDescription.entity(forEntityName: self.entity,
@@ -28,8 +24,8 @@ class DBCreator {
         let weight = NSManagedObject(entity: entity,
                                      insertInto: managedContext)
         
-        weight.setValue(kg, forKeyPath: "kg")
-        weight.setValue(date, forKeyPath: "date")
+        weight.setValue(weightEntity.kg, forKeyPath: "kg")
+        weight.setValue(weightEntity.date, forKeyPath: "date")
         
         do {
             try managedContext.save()
@@ -37,26 +33,23 @@ class DBCreator {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
-
     
-    func get() -> [Weight] {
+    func get() -> [WeightEntity] {
         let managedContext = appDelegate.persistentContainer.viewContext
-        var weights = [Weight]()
+        var weights = [WeightEntity]()
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Weight")
         do {
             let weightsObj = try managedContext.fetch(fetchRequest)
             for w in weightsObj {
-                let weight = Weight()
-                weight.date = w.value(forKeyPath: "date")
-                weight.kg = w.value(forKeyPath: "kg")
-                
+                var weight = WeightEntity()
+                weight.date = w.value(forKeyPath: "date") as! Date
+                weight.kg = w.value(forKeyPath: "kg") as! Float
+                weights.append(weight)
             }
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         
-        
-        
-        return weights!
+        return weights
     }
 }

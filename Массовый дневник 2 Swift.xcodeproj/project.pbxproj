@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84334BC81F84E4F300BAC6CB /* DBMng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334BC71F84E4F300BAC6CB /* DBMng.swift */; };
+		84334BFC1F8E689300BAC6CB /* WeightEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84334BFB1F8E689300BAC6CB /* WeightEntity.swift */; };
 		84716AFE1F83892C00E5385A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84716AFD1F83892C00E5385A /* AppDelegate.swift */; };
 		84716B001F83892C00E5385A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84716AFF1F83892C00E5385A /* ViewController.swift */; };
 		84716B031F83892C00E5385A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84716B011F83892C00E5385A /* Main.storyboard */; };
 		84716B061F83892C00E5385A /* __________________2_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84716B041F83892C00E5385A /* __________________2_Swift.xcdatamodeld */; };
 		84716B081F83892C00E5385A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84716B071F83892C00E5385A /* Assets.xcassets */; };
 		84716B0B1F83892C00E5385A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84716B091F83892C00E5385A /* LaunchScreen.storyboard */; };
+		84716B151F838FD900E5385A /* WeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84716B121F838FD900E5385A /* WeightTableViewCell.swift */; };
+		84716B161F838FD900E5385A /* WeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84716B131F838FD900E5385A /* WeightTableViewController.swift */; };
+		84716B171F838FD900E5385A /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84716B141F838FD900E5385A /* WeightViewController.swift */; };
+		84716B191F83911F00E5385A /* DateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84716B181F83911F00E5385A /* DateError.swift */; };
+		849AC1881F83B4920017F3C0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849AC1871F83B4920017F3C0 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84334BC71F84E4F300BAC6CB /* DBMng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBMng.swift; sourceTree = "<group>"; };
+		84334BFB1F8E689300BAC6CB /* WeightEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightEntity.swift; sourceTree = "<group>"; };
 		84716AFA1F83892C00E5385A /* Массовый дневник 2 Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Массовый дневник 2 Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84716AFD1F83892C00E5385A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84716AFF1F83892C00E5385A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		84716B071F83892C00E5385A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84716B0A1F83892C00E5385A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84716B0C1F83892C00E5385A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84716B121F838FD900E5385A /* WeightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTableViewCell.swift; sourceTree = "<group>"; };
+		84716B131F838FD900E5385A /* WeightTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTableViewController.swift; sourceTree = "<group>"; };
+		84716B141F838FD900E5385A /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		84716B181F83911F00E5385A /* DateError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateError.swift; sourceTree = "<group>"; };
+		849AC1871F83B4920017F3C0 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84334BEE1F8D315300BAC6CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		84716AF11F83892B00E5385A = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +78,15 @@
 			isa = PBXGroup;
 			children = (
 				84716AFD1F83892C00E5385A /* AppDelegate.swift */,
+				84716B181F83911F00E5385A /* DateError.swift */,
+				84716B121F838FD900E5385A /* WeightTableViewCell.swift */,
+				84716B131F838FD900E5385A /* WeightTableViewController.swift */,
+				84716B141F838FD900E5385A /* WeightViewController.swift */,
 				84716AFF1F83892C00E5385A /* ViewController.swift */,
+				84334BFB1F8E689300BAC6CB /* WeightEntity.swift */,
+				84334BC71F84E4F300BAC6CB /* DBMng.swift */,
+				849AC1871F83B4920017F3C0 /* Utils.swift */,
+				84334BEE1F8D315300BAC6CB /* Models */,
 				84716B011F83892C00E5385A /* Main.storyboard */,
 				84716B071F83892C00E5385A /* Assets.xcassets */,
 				84716B091F83892C00E5385A /* LaunchScreen.storyboard */,
@@ -139,9 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84334BFC1F8E689300BAC6CB /* WeightEntity.swift in Sources */,
+				84716B171F838FD900E5385A /* WeightViewController.swift in Sources */,
 				84716B001F83892C00E5385A /* ViewController.swift in Sources */,
+				84716B161F838FD900E5385A /* WeightTableViewController.swift in Sources */,
 				84716B061F83892C00E5385A /* __________________2_Swift.xcdatamodeld in Sources */,
+				84334BC81F84E4F300BAC6CB /* DBMng.swift in Sources */,
 				84716AFE1F83892C00E5385A /* AppDelegate.swift in Sources */,
+				84716B191F83911F00E5385A /* DateError.swift in Sources */,
+				84716B151F838FD900E5385A /* WeightTableViewCell.swift in Sources */,
+				849AC1881F83B4920017F3C0 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +337,7 @@
 				84716B111F83892F00E5385A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

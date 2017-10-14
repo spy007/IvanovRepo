@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "WeightViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():WeightViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "weight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

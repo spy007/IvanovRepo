@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class Utils {
+    class func dateToStr(date: Date) throws -> String {
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "dd MMMM, yyyy"
+                
+        let result = formatter.string(from: date)
+        if result == "" { throw DateError(error: "failed to get date") }
+        return result;
+    }
+}
